@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head> 
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+    
+	 <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+   integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+ <!-- Custom CSS -->
+ <!-- <link rel="stylesheet" href="assets/css/styles.css">
+ <link rel="stylesheet" href="assets/css/seg.css">
+ <link rel="stylesheet" href="assets/css/styles_responsive.css">
+ <link rel="stylesheet" href="assets/css/responsive.css">
+ <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css"> -->
+ <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/luxonauta/luxa@8a98/dist/compressed/luxa.css"> -->
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
+
+	<!-- FontAwesome CSS -->
+  <link href="assets/fonts/css/all.css" rel="stylesheet" type="text/css">
+  
+	<title>Korroboree Video Journal</title>
+    
+    <style>
+        /* <---nav-----> */
+
+
+#menu-wrapper {
+  overflow: hidden;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+
+#menu-wrapper #hamburger-menu {
+  position: relative;
+  width: 25px;
+  height: 20px;
+  margin: 15px;
+}
+
+#menu-wrapper #hamburger-menu span {
+  opacity: 1;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 10px;
+  color: black;
+  background-color: white;
+  position: absolute;
+  transform: rotate(0deg);
+  transition: .4s ease-in-out;
+}
+
+#menu-wrapper #hamburger-menu span:nth-child(1) {
+  top: 0;
+}
+#menu-wrapper #hamburger-menu span:nth-child(2) {
+  top: 9px;
+}
+#menu-wrapper #hamburger-menu span:nth-child(3) {
+  top: 18px;
+}
+#menu-wrapper #hamburger-menu.open span:nth-child(1) {
+  transform: translateY(9px) rotate(135deg);
+}
+#menu-wrapper #hamburger-menu.open span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-60px);
+}
+#menu-wrapper #hamburger-menu.open span:nth-child(3) {
+  transform: translateY(-9px) rotate(-135deg);
+}
+
+#menu-container .menu-list .menu-submenu {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#menu-container .menu-list {
+  padding-left: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  max-width: 450px;
+  background: white;
+  box-shadow: rgba(100,100,100,0.2) 6px 2px 10px;
+  z-index: 999;
+  overflow-y: auto;
+  overflow-x: hidden;
+  left: -100%;
+}
+
+#menu-container .menu-list li.accordion-toggle, #menu-container .menu-list .menu-login {
+  font-size: 16px;
+  padding: 20px;
+  text-transform: uppercase;
+  border-top: 1px solid #dbdcd2;
+}
+#menu-container .menu-list li:first-of-type {
+  border-top: 0;
+}
+
+.accordion-toggle, .accordion-content {
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.accordion-content {
+  display: none;
+}
+
+.accordion-toggle a:before, .accordion-toggle a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  width: 15px;
+  height: 2px;
+  margin-top: -1px;
+  background-color: #5a5858;
+  transform-origin: 50% 50%;
+  transition: all 0.3s ease-out;
+}
+
+.accordion-toggle a:before {
+  transform: rotate(-90deg);
+  opacity: 1;
+  z-index: 2;
+}
+
+.accordion-toggle.active-tab {
+background: yellowgreen;
+transition: all 0.3s ease;
+}
+.accordion-toggle a.active:before {
+  transform: rotate(0deg);
+  background: #fff !important;
+}
+
+.accordion-toggle a.active:after {
+  transform: rotate(180deg);
+  background: #fff !important;
+  opacity: 0;
+}
+    </style>
+  </head>
+  <body class="intropage">
+      
+    <div id="menu-container">
+        <div id="menu-wrapper">
+           <div id="hamburger-menu">
+            <div class="row">
+                <div class="col-lg-6 col-md-6" style="color: white;">
+                
+                 <div class="card">
+                     <video class="" controls>
+                       <source src="assets/videos/Segment 1.mp4" type="video/mp4">
+                      
+                     </video>
+                     <div class="card-body">
+                       <p class="card-text">What is ‘My’ powerful why of
+                         attending this Moonshot 
+                         Conversation ?</p>
+                     </div>
+                   </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mt-40" >
+               
+                 <div class="row justify-content-center">
+                     <div class="card_input">
+                         <div class="whyhre"><center>Why are you here?</center></div>
+                         <div class="pt-1 ">To know more about my child</div>
+                         <div class="pt-1 ">To learn about conscious parenting </div>
+                         <div class="pt-1 ">To interact with other parents</div>
+                         <div class="row txtarea">
+                             <textarea placeholder="Others click here"></textarea>
+                         </div>
+     
+                         <div class="sub_btn">
+                           <!-- <center><a href="succ_1"><button class="btn submit1">submit</button></a></center> -->
+                         
+                            <center> 
+                              <a class=" btn submit1" href="#popup">submit</a>
+                              <div class="popup" id="popup">
+                               <div class="popup-inner">
+                                 <div class="popup__photo">
+                                   <img src="assets/images/foundation/succ_img1.png" alt="">
+                                 </div>
+                                 <div class=" pcs_1">
+                                   <p>Successfully Submitted</p>
+                                 </div>
+                                 <a class="popup__close" href="#">X</a>
+                               </div>
+                             </div>
+                           </center>
+                         
+                         </div>
+                     </div>
+                 </div>
+     
+                </div>
+              </div>
+           </div>
+           <!-- hamburger-menu -->
+        </div>
+        <!-- menu-wrapper -->
+        <ul class="menu-list accordion">
+           <li id="nav1" class="toggle accordion-toggle"> 
+              <span class="icon-plus"></span>
+              <a class="menu-link" href="#">Menu1</a>
+           </li>
+           <li id="nav1" class="toggle accordion-toggle"> 
+            <span class="icon-plus"></span>
+            <a class="menu-link" href="#">Menu1</a>
+         </li>
+         <li id="nav1" class="toggle accordion-toggle"> 
+            <span class="icon-plus"></span>
+            <a class="menu-link" href="#">Menu1</a>
+         </li>
+         <li id="nav1" class="toggle accordion-toggle"> 
+            <span class="icon-plus"></span>
+            <a class="menu-link" href="#">Menu1</a>
+         </li>
+         <li id="nav1" class="toggle accordion-toggle"> 
+            <span class="icon-plus"></span>
+            <a class="menu-link" href="#">Menu1</a>
+         </li>
+         <li id="nav1" class="toggle accordion-toggle"> 
+            <span class="icon-plus"></span>
+            <a class="menu-link" href="#">Menu1</a>
+         </li>
+         <li id="nav1" class="toggle accordion-toggle"> 
+            <span class="icon-plus"></span>
+            <a class="menu-link" href="#">Menu1</a>
+         </li>
+         <li id="nav1" class="toggle accordion-toggle"> 
+            <span class="icon-plus"></span>
+            <a class="menu-link" href="#">Menu1</a>
+         </li>
+         <li id="nav1" class="toggle accordion-toggle"> 
+            <span class="icon-plus"></span>
+            <a class="menu-link" href="#">Menu1</a>
+         </li>
+         <li id="nav1" class="toggle accordion-toggle"> 
+            <span class="icon-plus"></span>
+            <a class="menu-link" href="#">Menu1</a>
+         </li>
+           <!-- menu-submenu accordon-content-->
+           <li id="nav2" class="toggle accordion-toggle"> 
+              <span class="icon-plus"></span>
+              <a class="menu-link" href="#">Menu2</a>
+           </li>
+           <!-- menu-submenu accordon-content-->
+                <li id="nav3" class="toggle accordion-toggle"> 
+              <span class="icon-plus"></span>
+              <a class="menu-link" href="#">Menu3</a>
+           </li>
+           
+        </ul>
+        <!-- menu-list accordion-->
+     </div>
+     
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="assets/bootstrap/js/jquery-3.5.1.slim.js"></script>
+    <script src="assets/bootstrap/js/popper.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="assets/js/hideshow.js"></script>
+	  
+  <script src="assets/fonts/js/all.js"></script>
+  <script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+  <script src="assets/js/modal.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script>
+      $(function() {
+	function slideMenu() {
+	  var activeState = $("#menu-container .menu-list").hasClass("active");
+	  $("#menu-container .menu-list").animate({left: activeState ? "0%" : "-100%"}, 400);
+	}
+	$("#menu-wrapper").click(function(event) {
+	  event.stopPropagation();
+	  $("#hamburger-menu").toggleClass("open");
+	  $("#menu-container .menu-list").toggleClass("active");
+	  slideMenu();
+  
+	  $("body").toggleClass("overflow-hidden");
+	});
+  
+	$(".menu-list").find(".accordion-toggle").click(function() {
+	  $(this).next().toggleClass("open").slideToggle("fast");
+	  $(this).toggleClass("active-tab").find(".menu-link").toggleClass("active");
+  
+	  $(".menu-list .accordion-content").not($(this).next()).slideUp("fast").removeClass("open");
+	  $(".menu-list .accordion-toggle").not(jQuery(this)).removeClass("active-tab").find(".menu-link").removeClass("active");
+	});
+  }); // jQuery load
+  </script>
+  
+  </body>
+</html>
